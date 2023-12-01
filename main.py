@@ -8,7 +8,7 @@ import base64
 from io import BytesIO
 
 # Load model
-model_path = 'path_to_your_model_file'
+model_path = './juggernautXL_v7Rundiffusion.safetensors'
 model = torch.load(model_path)
 pipe = StableDiffusionPipeline(model, torch_dtype=torch.float16)
 pipe.to("cuda")
